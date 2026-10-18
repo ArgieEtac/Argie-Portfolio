@@ -1,0 +1,1071 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Argie Etac - Computer Engineering Student Portfolio. Specializing in Embedded Systems, Hardware Prototyping, Digital Logic, and Software Development." />
+  <meta name="keywords" content="Argie Etac, Computer Engineering, Embedded Systems, Arduino, Raspberry Pi, Hardware, Java, Portfolio" />
+  <meta name="author" content="Argie Etac" />
+  <title>Argie Etac | Computer Engineering Portfolio</title>
+  
+  <!-- Favicon SVG -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230e1720'/><rect x='15' y='15' width='70' height='70' rx='12' fill='%2313261e' stroke='%2310b981' stroke-width='4'/><text x='50' y='62' font-family='monospace' font-weight='900' font-size='38' fill='%2310b981' text-anchor='middle'>AE</text></svg>" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Background Ambience -->
+  <div class="ambient-glow glow-top"></div>
+  <div class="ambient-glow glow-bottom"></div>
+  <div class="circuit-grid-bg"></div>
+
+  <!-- Header Navigation -->
+  <header class="site-header" id="siteHeader">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="#home">
+        <span class="brand-mark">
+          <svg viewBox="0 0 40 40" class="brand-svg">
+            <rect width="40" height="40" rx="10" fill="currentColor" fill-opacity="0.1" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M12 28L18 12H22L28 28M14 24H26" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </span>
+        <span class="brand-text">
+          ARGIE ETAC
+          <span class="brand-sub">COMPUTER ENGINEERING</span>
+        </span>
+      </a>
+
+      <!-- Desktop Nav -->
+      <div class="nav-links" id="navLinks">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#sandbox" class="nav-link">Logic Demo</a>
+        <a href="#terminal" class="nav-link"><span class="terminal-badge">&gt;_</span> Terminal</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#contact" class="nav-contact">Contact Me</a>
+      </div>
+
+      <!-- Controls & Mobile Toggle -->
+      <div class="nav-actions">
+        <a href="#contact" class="quick-cta-btn">Hire / Connect</a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="mainContent">
+
+    <!-- HERO SECTION -->
+    <section class="hero container" id="home">
+      <div class="hero-copy">
+        <div class="status-pill">
+          <span class="status-indicator"></span>
+          <span class="status-text">BS COMPUTER ENGINEERING STUDENT</span>
+        </div>
+
+        <h1 class="hero-title">
+          Engineering the bridge between <span class="accent-gradient">Silicon</span> &amp; <span class="accent-code">&lt;Code&gt;</span>.
+        </h1>
+
+        <p class="hero-description">
+          Kamusta! I'm <strong>Argie Etac</strong>, an aspiring Computer Engineer passionate about 
+          microcontroller firmware, digital logic design, circuit prototyping, and software systems. 
+          I turn ideas into functional hardware-software builds.
+        </p>
+
+        <!-- Skill Badges -->
+        <div class="hero-tags">
+          <span class="tag"><i class="tag-icon">⚡</i> Embedded Systems</span>
+          <span class="tag"><i class="tag-icon">⎔</i> Microcontrollers</span>
+          <span class="tag"><i class="tag-icon">🔲</i> Digital Logic &amp; Circuits</span>
+          <span class="tag"><i class="tag-icon">☕</i> Java / C++ / Python</span>
+          <span class="tag"><i class="tag-icon">🌐</i> Web Tech</span>
+        </div>
+
+        <!-- Call to Action Buttons -->
+        <div class="hero-actions">
+          <a class="button primary" href="#projects">
+            <span>Explore My Projects</span>
+            <svg class="btn-arrow" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+          </a>
+          <a class="button secondary" href="#terminal">
+            <span class="cli-icon">&gt;_</span>
+            <span>Launch CLI Prompt</span>
+          </a>
+          <button class="button outline" id="btnQuickResume" title="View CV Summary">
+            <span>View CV Brief</span>
+          </button>
+        </div>
+
+        <!-- Quick Stats Strip -->
+        <div class="hero-metrics">
+          <div class="metric-item">
+            <span class="metric-val">5+</span>
+            <span class="metric-lbl">Featured Builds</span>
+          </div>
+          <div class="metric-divider"></div>
+          <div class="metric-item">
+            <span class="metric-val">CPE</span>
+            <span class="metric-lbl">Engineering Major</span>
+          </div>
+          <div class="metric-divider"></div>
+          <div class="metric-item">
+            <span class="metric-val">100%</span>
+            <span class="metric-lbl">Hands-on Learner</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Visual: Futuristic Microcontroller & Circuit Board -->
+      <div class="hero-visual" aria-label="Interactive Computer Engineering Circuit Architecture">
+        <div class="circuit-board-wrapper">
+          <div class="pcb-grid"></div>
+
+          <!-- Traces & Buses -->
+          <div class="trace trace-h trace-1"></div>
+          <div class="trace trace-v trace-2"></div>
+          <div class="trace trace-diag trace-3"></div>
+          <div class="trace trace-h trace-4"></div>
+
+          <!-- Pulsing Test Nodes -->
+          <div class="pcb-node node-a" title="GPIO 04 - High"></div>
+          <div class="pcb-node node-b" title="I2C Bus Active"></div>
+          <div class="pcb-node node-c" title="PWM Clock Out"></div>
+          <div class="pcb-node node-d" title="5V VCC"></div>
+
+          <!-- Main MCU Chip -->
+          <div class="mcu-chip">
+            <div class="chip-notch"></div>
+            <div class="chip-brand">ATmega · ARM</div>
+            <div class="chip-core">CPE-SYSTEM</div>
+            <div class="chip-sub">32-BIT RISC CORE</div>
+            <!-- Chip Pins Left -->
+            <div class="pins pins-left">
+              <i></i><i></i><i></i><i></i><i></i><i></i>
+            </div>
+            <!-- Chip Pins Right -->
+            <div class="pins pins-right">
+              <i></i><i></i><i></i><i></i><i></i><i></i>
+            </div>
+          </div>
+
+          <!-- Telemetry Floating Cards -->
+          <div class="telemetry-card card-top">
+            <div class="card-icon hw-icon">⚙</div>
+            <div>
+              <div class="t-title">Hardware Layer</div>
+              <div class="t-sub">Raspberry Pi · Sensors · Actuators</div>
+            </div>
+          </div>
+
+          <div class="telemetry-card card-bottom">
+            <div class="card-icon sw-icon">&lt;/&gt;</div>
+            <div>
+              <div class="t-title">Software Layer</div>
+              <div class="t-sub">Firmware · OOP Logic · APIs</div>
+            </div>
+          </div>
+
+          <!-- Live Signal Monitor Indicator -->
+          <div class="signal-badge">
+            <span class="signal-dot"></span> BUS: 3.3V CLK ACTIVE
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUICK CONNECT STRIP -->
+    <section class="quick-section">
+      <div class="container quick-inner">
+        <div class="quick-intro">
+          <p class="section-kicker">DISPATCH &amp; REPOSITORIES</p>
+          <h2>Engineering Profile Links</h2>
+          <p class="muted">Check out my source repositories, send a direct email, or jump to my projects.</p>
+        </div>
+        <div class="quick-links">
+          <a href="https://github.com/ArgieEtac" target="_blank" rel="noreferrer" class="quick-card">
+            <div class="quick-icon-box git-box">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+              </svg>
+            </div>
+            <div class="quick-content">
+              <strong>GitHub Profile</strong>
+              <small>github.com/ArgieEtac</small>
+            </div>
+            <span class="external-arrow">↗</span>
+          </a>
+
+          <a href="mailto:cateargie@gmail.com" class="quick-card" id="quickEmailCard">
+            <div class="quick-icon-box mail-box">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+              </svg>
+            </div>
+            <div class="quick-content">
+              <strong>Direct Mail</strong>
+              <small>cateargie@gmail.com</small>
+            </div>
+            <span class="external-arrow">↗</span>
+          </a>
+
+          <a href="tel:09398443278" class="quick-card">
+            <div class="quick-icon-box phone-box">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                <path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+              </svg>
+            </div>
+            <div class="quick-content">
+              <strong>Mobile Call / SMS</strong>
+              <small>09398443278</small>
+            </div>
+            <span class="external-arrow">↗</span>
+          </a>
+
+          <a href="#contact" class="quick-card">
+            <div class="quick-icon-box msg-box">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 10H6v-2h12v2zm0-3H6V7h12v2z"/>
+              </svg>
+            </div>
+            <div class="quick-content">
+              <strong>Send Inquiry</strong>
+              <small>Open contact form</small>
+            </div>
+            <span class="external-arrow">↓</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SELECTED PROJECTS SECTION -->
+    <section class="section container" id="projects">
+      <div class="section-heading">
+        <div>
+          <p class="section-kicker">PORTFOLIO BUILDS</p>
+          <h2 class="section-title">Projects &amp; Experiments<span class="accent-dot">.</span></h2>
+          <p class="muted">A curated collection of hardware systems, embedded designs, coursework, and software applications.</p>
+        </div>
+
+        <!-- Filter Controls -->
+        <div class="filters" role="group" aria-label="Filter engineering projects">
+          <button class="filter active" data-filter="all">All (5)</button>
+          <button class="filter" data-filter="web">Web Platform</button>
+          <button class="filter" data-filter="hardware">Hardware</button>
+          <button class="filter" data-filter="embedded">Embedded</button>
+          <button class="filter" data-filter="software">Software</button>
+        </div>
+      </div>
+
+      <!-- Projects Grid -->
+      <div class="project-grid" id="projectGrid">
+
+        <!-- PROJECT 1: Community Aid Network (CAN) - Capstone Project -->
+        <article class="project-card" data-category="software web" id="card-can">
+          <div class="project-art can-art">
+            <div class="art-overlay"></div>
+            <!-- Web Dashboard Mockup -->
+            <div class="can-mockup">
+              <div class="can-titlebar">
+                <div class="window-controls">
+                  <span class="win-btn red"></span>
+                  <span class="win-btn yellow"></span>
+                  <span class="win-btn green"></span>
+                </div>
+                <span class="can-tab">can-aid-network.org</span>
+                <span class="can-status-tag">VERIFIED</span>
+              </div>
+              <div class="can-screen-body">
+                <div class="can-alert-bar">
+                  <span class="pulse-beacon"></span>
+                  <span>DISASTER AID PORTAL · BARANGAY NETWORK</span>
+                </div>
+                <div class="can-request-pill">
+                  <span class="req-title">URGENT: Emergency Medicines &amp; Supplies</span>
+                  <span class="req-cat">Goods Only · Non-Monetary Aid</span>
+                </div>
+                <div class="can-meta-row">
+                  <span class="can-meta-item">📍 3 Pilot Barangays</span>
+                  <span class="can-meta-item">🛡 Verified Coordinators</span>
+                  <span class="can-meta-item">📦 Real-time Tracking</span>
+                </div>
+              </div>
+            </div>
+            <div class="art-badge">FEATURED · CAPSTONE WEB SYSTEM</div>
+          </div>
+
+          <div class="project-body">
+            <div class="project-meta">
+              <span class="project-type"><i class="dot-sw"></i> WEB APP + CAPSTONE</span>
+              <span class="project-status status-done">LEAD BACKEND DEV</span>
+            </div>
+
+            <h3 class="project-name">Community Aid Network (CAN) – Project Nexus</h3>
+
+            <p class="project-desc">
+              A centralized web-based platform for disaster response and social support presented to ICCT Colleges. 
+              Connects verified community leaders with helpers for tangible relief goods and medicines without cash transactions, 
+              featuring multi-filter search, direct coordinator messaging, and fulfillment tracking.
+            </p>
+
+            <div class="tech-tags">
+              <span>Lead Backend Developer</span>
+              <span>Web Platform</span>
+              <span>Centralized Database</span>
+              <span>Secure Messaging</span>
+              <span>PDF Documentation</span>
+            </div>
+
+            <div class="card-footer-action">
+              <button class="button small-btn details-button" data-project="can">
+                <span>View Full Specs &amp; Details</span>
+                <span class="arrow-icon">↗</span>
+              </button>
+              <a href="PROJECT-NEXUS_CAN_CHAPTER-1.pdf" target="_blank" class="button outline small-btn" title="Open Chapter 1 PDF Document">
+                <span>Chapter 1 PDF</span>
+                <span class="arrow-icon">📄</span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJECT 2: Coin Changer Machine -->
+        <article class="project-card" data-category="hardware embedded" id="card-coin">
+          <div class="project-art coin-art">
+            <div class="art-overlay"></div>
+            <!-- CSS Coin Art & Machine Display -->
+            <div class="coin coin-primary">₱</div>
+            <div class="coin coin-secondary">₱</div>
+            <div class="machine-screen">
+              <div class="screen-header">
+                <span class="screen-dot"></span>
+                <span>SYSTEM ONLINE</span>
+              </div>
+              <div class="screen-title">COIN CHANGER</div>
+              <div class="screen-amount">INSERT COIN: ₱0.00</div>
+              <div class="screen-led-row">
+                <i class="led-indicator active"></i>
+                <i class="led-indicator"></i>
+                <i class="led-indicator"></i>
+              </div>
+            </div>
+            <div class="machine-slot">
+              <span class="slot-light"></span>
+            </div>
+            <div class="art-badge">BUILD / 02 · EMBEDDED</div>
+          </div>
+
+          <div class="project-body">
+            <div class="project-meta">
+              <span class="project-type"><i class="dot-hw"></i> HARDWARE + EMBEDDED</span>
+              <span class="project-status status-dev">PROTOTYPE PHASE</span>
+            </div>
+
+            <h3 class="project-name">Smart Automated Coin Changer Machine</h3>
+
+            <p class="project-desc">
+              An automated coin-to-denomination dispensing system designed using a Raspberry Pi / microcontroller, 
+              multi-coin pulse acceptor, optical drop sensors, high-torque payout hoppers, and a real-time status display.
+            </p>
+
+            <div class="tech-tags">
+              <span>Raspberry Pi</span>
+              <span>Coin Acceptor</span>
+              <span>Motor Drivers</span>
+              <span>Python / C++</span>
+              <span>Relays</span>
+            </div>
+
+            <div class="card-footer-action">
+              <button class="button small-btn details-button" data-project="coin">
+                <span>View Full Specs &amp; Block Diagram</span>
+                <span class="arrow-icon">↗</span>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJECT 2: Digital Logic Circuits -->
+        <article class="project-card" data-category="hardware" id="card-logic">
+          <div class="project-art logic-art">
+            <div class="art-overlay"></div>
+            <div class="logic-header">
+              <span class="schematic-label">SCHEMATIC: LOGIC-GATES-V2</span>
+              <span class="voltage-label">VCC = +5.0V</span>
+            </div>
+            <div class="logic-circuit-demo">
+              <div class="logic-row">
+                <span class="gate-chip gate-and">AND [7408]</span>
+                <span class="signal-wire wire-active"></span>
+                <span class="gate-chip gate-or">OR [7432]</span>
+                <span class="signal-wire wire-active"></span>
+                <span class="gate-led led-glow" title="Circuit Output HIGH"></span>
+              </div>
+              <div class="logic-row">
+                <span class="gate-chip gate-not">NOT [7404]</span>
+                <span class="signal-wire"></span>
+                <span class="gate-chip gate-xor">XOR [7486]</span>
+                <span class="signal-wire"></span>
+                <span class="gate-led"></span>
+              </div>
+              <div class="mini-truth-table">
+                <span class="col-head">A</span><span class="col-head">B</span><span class="col-head">Y</span>
+                <span>0</span><span>0</span><span>0</span>
+                <span>1</span><span>0</span><span>0</span>
+                <span class="active-row">1</span><span class="active-row">1</span><span class="active-row">1</span>
+              </div>
+            </div>
+            <div class="art-badge">BUILD / 03 · DIGITAL LAB</div>
+          </div>
+
+          <div class="project-body">
+            <div class="project-meta">
+              <span class="project-type"><i class="dot-hw"></i> DIGITAL ELECTRONICS</span>
+              <span class="project-status status-done">COMPLETED LAB</span>
+            </div>
+
+            <h3 class="project-name">Digital Logic Circuits &amp; Combinational Systems</h3>
+
+            <p class="project-desc">
+              Design, breadboarding, and simulation of Boolean logic circuits, adders, multiplexers, and 
+              flip-flop state machines with verified truth tables and timing diagrams.
+            </p>
+
+            <div class="tech-tags">
+              <span>7400-Series ICs</span>
+              <span>Boolean Algebra</span>
+              <span>Logisim / Multisim</span>
+              <span>Truth Tables</span>
+            </div>
+
+            <div class="card-footer-action">
+              <button class="button small-btn details-button" data-project="logic">
+                <span>View Full Specs &amp; Block Diagram</span>
+                <span class="arrow-icon">↗</span>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJECT 3: Microcontroller Sensor System -->
+        <article class="project-card" data-category="embedded hardware" id="card-sensor">
+          <div class="project-art sensor-art">
+            <div class="art-overlay"></div>
+            <!-- Microcontroller Module Artwork -->
+            <div class="sensor-board-visual">
+              <div class="sensor-pin-strip top-pins"></div>
+              <div class="board-mcu-core">
+                <div class="mcu-label">ESP32 / AVR</div>
+                <div class="mcu-freq">160MHz</div>
+              </div>
+              <div class="ultrasonic-sensor">
+                <div class="transducer tx" title="Transmitter">TX</div>
+                <div class="transducer rx" title="Receiver">RX</div>
+              </div>
+              <!-- Simulated Wave Pulses -->
+              <div class="wave-radar wave-1"></div>
+              <div class="wave-radar wave-2"></div>
+              <div class="sensor-pin-strip bottom-pins"></div>
+            </div>
+            <div class="art-badge">BUILD / 04 · IOT NODE</div>
+          </div>
+
+          <div class="project-body">
+            <div class="project-meta">
+              <span class="project-type"><i class="dot-hw"></i> EMBEDDED SYSTEMS</span>
+              <span class="project-status status-tested">TEST BENCH VERIFIED</span>
+            </div>
+
+            <h3 class="project-name">Microcontroller Sensor Acquisition &amp; Telemetry</h3>
+
+            <p class="project-desc">
+              Multi-sensor monitoring node implementing analog/digital input sampling (ultrasonic, temperature, IR), 
+              threshold-based interrupts, and output alerts via PWM buzzers, I2C OLED display, and status LEDs.
+            </p>
+
+            <div class="tech-tags">
+              <span>Arduino / ESP32</span>
+              <span>I2C / SPI</span>
+              <span>Analog-to-Digital (ADC)</span>
+              <span>C / C++</span>
+            </div>
+
+            <div class="card-footer-action">
+              <button class="button small-btn details-button" data-project="sensor">
+                <span>View Full Specs &amp; Block Diagram</span>
+                <span class="arrow-icon">↗</span>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJECT 4: Java Programming Projects -->
+        <article class="project-card" data-category="software" id="card-java">
+          <div class="project-art code-art">
+            <div class="art-overlay"></div>
+            <div class="ide-mockup">
+              <div class="ide-titlebar">
+                <div class="window-controls">
+                  <span class="win-btn red"></span>
+                  <span class="win-btn yellow"></span>
+                  <span class="win-btn green"></span>
+                </div>
+                <span class="ide-tab">InventorySystem.java</span>
+              </div>
+              <pre class="ide-code"><code><span class="kw">public class</span> <span class="cls">HardwareInventory</span> {
+  <span class="kw">private final</span> List&lt;Component&gt; parts;
+  
+  <span class="kw">public void</span> <span class="fn">dispenseChange</span>(<span class="typ">double</span> amount) {
+    System.out.printf(<span class="str">"Calculating ₱%.2f payout...%n"</span>, amount);
+  }
+}</code></pre>
+            </div>
+            <div class="art-badge">BUILD / 05 · OOP SYSTEMS</div>
+          </div>
+
+          <div class="project-body">
+            <div class="project-meta">
+              <span class="project-type"><i class="dot-sw"></i> SOFTWARE DEVELOPMENT</span>
+              <span class="project-status status-done">COMPLETED APPS</span>
+            </div>
+
+            <h3 class="project-name">Object-Oriented Java Software Suite</h3>
+
+            <p class="project-desc">
+              Desktop and console-based enterprise applications focused on OOP architecture, data structures 
+              (LinkedLists, HashMaps), file I/O persistence, and robust menu-driven user management systems.
+            </p>
+
+            <div class="tech-tags">
+              <span>Java Core</span>
+              <span>OOP Architecture</span>
+              <span>Collections Framework</span>
+              <span>File Handling</span>
+            </div>
+
+            <div class="card-footer-action">
+              <button class="button small-btn details-button" data-project="java">
+                <span>View Full Specs &amp; Block Diagram</span>
+                <span class="arrow-icon">↗</span>
+              </button>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="project-note-banner">
+        <span class="info-icon">💡</span>
+        <p>
+          <strong>Engineering Note:</strong> All projects highlight authentic Computer Engineering coursework and practical development. 
+          Click on any card to view detailed schematics, algorithms, and documentation checklists.
+        </p>
+      </div>
+    </section>
+
+    <!-- INTERACTIVE LOGIC GATE SANDBOX (Interactive Feature) -->
+    <section class="section logic-sandbox-section" id="sandbox">
+      <div class="container">
+        <div class="section-heading centered-heading">
+          <p class="section-kicker">INTERACTIVE HARDWARE DEMO</p>
+          <h2 class="section-title">Digital Logic Gate Simulator<span class="accent-dot">.</span></h2>
+          <p class="muted">Test inputs in real time to observe Boolean logic computation and visual output signals.</p>
+        </div>
+
+        <div class="sandbox-card">
+          <div class="sandbox-controls">
+            <!-- Gate Selector -->
+            <div class="gate-picker">
+              <label for="gateSelect">Select Logic Gate:</label>
+              <select id="gateSelect" class="styled-select">
+                <option value="AND" selected>AND Gate (7408)</option>
+                <option value="OR">OR Gate (7432)</option>
+                <option value="XOR">XOR Gate (7486)</option>
+                <option value="NAND">NAND Gate (7400)</option>
+                <option value="NOR">NOR Gate (7402)</option>
+              </select>
+            </div>
+
+            <div class="gate-formula">
+              <span>Expression:</span>
+              <code id="gateFormulaDisplay">Y = A · B</code>
+            </div>
+          </div>
+
+          <!-- Interactive Circuit Board Graphic -->
+          <div class="interactive-circuit">
+            <!-- Inputs -->
+            <div class="circuit-inputs">
+              <div class="input-switch-group">
+                <span class="input-label">Input A:</span>
+                <button class="switch-toggle" id="switchA" data-state="0">
+                  <span class="switch-handle"></span>
+                  <span class="switch-text">0 (LOW)</span>
+                </button>
+              </div>
+
+              <div class="input-switch-group">
+                <span class="input-label">Input B:</span>
+                <button class="switch-toggle" id="switchB" data-state="0">
+                  <span class="switch-handle"></span>
+                  <span class="switch-text">0 (LOW)</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Gate Visual -->
+            <div class="circuit-core">
+              <div class="gate-icon-box" id="gateVisualBox">
+                <span class="gate-title-badge" id="gateVisualName">AND</span>
+                <div class="internal-wires">
+                  <span class="wire-in in-1"></span>
+                  <span class="wire-in in-2"></span>
+                  <span class="wire-out" id="wireOut"></span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Output -->
+            <div class="circuit-output">
+              <div class="output-led-wrapper">
+                <div class="sim-led" id="simLed"></div>
+                <div class="led-halo" id="simLedHalo"></div>
+              </div>
+              <div class="output-readout">
+                <span class="out-label">Output Y:</span>
+                <strong class="out-value" id="simOutputVal">0 (LOW)</strong>
+              </div>
+            </div>
+          </div>
+
+          <!-- Dynamic Truth Table Indicator -->
+          <div class="truth-table-wrapper">
+            <table class="sim-truth-table">
+              <thead>
+                <tr>
+                  <th>A</th>
+                  <th>B</th>
+                  <th>Y Output</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody id="truthTableBody">
+                <tr id="tt-00" class="tt-row active-eval"><td>0</td><td>0</td><td>0</td><td>Current State</td></tr>
+                <tr id="tt-01" class="tt-row"><td>0</td><td>1</td><td>0</td><td>Inactive</td></tr>
+                <tr id="tt-10" class="tt-row"><td>1</td><td>0</td><td>0</td><td>Inactive</td></tr>
+                <tr id="tt-11" class="tt-row"><td>1</td><td>1</td><td>1</td><td>Inactive</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTERACTIVE CLI TERMINAL (Paayos ng Prompt Feature) -->
+    <section class="section terminal-section" id="terminal">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">ENGINEER's COMMAND PROMPT</p>
+            <h2 class="section-title">Interactive CLI Console<span class="accent-dot">.</span></h2>
+            <p class="muted">Try typing real terminal commands like <code>help</code>, <code>skills</code>, <code>projects</code>, <code>neofetch</code>, or <code>contact</code>.</p>
+          </div>
+          <button class="button small-btn secondary" id="clearTerminalBtn">Clear Screen</button>
+        </div>
+
+        <div class="terminal-window">
+          <!-- Terminal Header Bar -->
+          <div class="terminal-bar">
+            <div class="term-dots">
+              <span class="term-dot dot-close"></span>
+              <span class="term-dot dot-min"></span>
+              <span class="term-dot dot-max"></span>
+            </div>
+            <div class="term-title">argie@cpe-station:~ (bash)</div>
+            <div class="term-status">PORT: /dev/ttyUSB0</div>
+          </div>
+
+          <!-- Terminal Screen Output -->
+          <div class="terminal-body" id="terminalOutput">
+            <div class="term-line banner">
+<pre class="ascii-art">
+   ___           _       ______ __            
+  / _ | _______ (_)__   / __/ //_/__ _____   
+ / __ |/ __/ _ `/ / -_) / _// __/ _ `/ __/   
+/_/ |_/_/  \_, /_/\__/ /___/\__/\_,_/\__/    
+          /___/     BS COMPUTER ENGINEERING  
+</pre>
+            </div>
+            <div class="term-line info-line">Welcome to Argie Etac's Interactive System Prompt [v2.4.0-cpe].</div>
+            <div class="term-line info-line">Type <span class="term-highlight">help</span> to view available commands or click the shortcut chips below:</div>
+            
+            <div class="term-shortcuts">
+              <button class="term-chip" data-cmd="help">help</button>
+              <button class="term-chip" data-cmd="neofetch">neofetch</button>
+              <button class="term-chip" data-cmd="projects">projects</button>
+              <button class="term-chip" data-cmd="skills">skills</button>
+              <button class="term-chip" data-cmd="about">about</button>
+              <button class="term-chip" data-cmd="contact">contact</button>
+              <button class="term-chip" data-cmd="clear">clear</button>
+            </div>
+          </div>
+
+          <!-- Terminal Interactive Input Line -->
+          <div class="terminal-input-row">
+            <span class="term-prompt-lbl">argie@cpe:~$</span>
+            <input type="text" id="terminalInput" class="terminal-input" placeholder="type a command (e.g., 'help' or 'neofetch')..." autocomplete="off" spellcheck="false" />
+            <button class="term-run-btn" id="terminalSendBtn">ENTER ↵</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TECHNICAL TOOLKIT (SKILLS) -->
+    <section class="skills-section" id="skills">
+      <div class="container skills-layout">
+        <div class="skills-intro">
+          <p class="section-kicker">TECHNICAL TOOLKIT</p>
+          <h2 class="section-title">Skills &amp; Competencies<span class="accent-dot">.</span></h2>
+          <p class="muted">
+            As a Computer Engineering student, my capabilities bridge physical circuit design, 
+            low-level microcontroller firmware, and higher-level software development.
+          </p>
+          <div class="skills-extra-card">
+            <h4>Engineering Philosophy</h4>
+            <p>
+              "Understand systems from the transistor logic gates up to user applications. 
+              Always prototype, measure with proper instruments, and write clean, modular code."
+            </p>
+          </div>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Skill Card 1 -->
+          <div class="skill-card">
+            <div class="skill-header">
+              <span class="skill-symbol">⚡</span>
+              <h3>Hardware &amp; Electronics</h3>
+            </div>
+            <ul class="skill-list">
+              <li>Digital Logic &amp; Combinational Circuits</li>
+              <li>Breadboarding &amp; Circuit Schematics</li>
+              <li>7400 Series TTL / CMOS ICs</li>
+              <li>Sensors (Ultrasonic, IR, Hall Effect, DHT)</li>
+              <li>Multimeter &amp; Signal Troubleshooting</li>
+            </ul>
+          </div>
+
+          <!-- Skill Card 2 -->
+          <div class="skill-card">
+            <div class="skill-header">
+              <span class="skill-symbol">⎔</span>
+              <h3>Embedded Systems</h3>
+            </div>
+            <ul class="skill-list">
+              <li>Microcontroller Programming (Arduino, ESP32)</li>
+              <li>Raspberry Pi System Prototyping</li>
+              <li>GPIO, PWM, ADC Interfacing</li>
+              <li>Serial Protocols (UART, I2C, SPI)</li>
+              <li>Actuator &amp; Relay Motor Control</li>
+            </ul>
+          </div>
+
+          <!-- Skill Card 3 -->
+          <div class="skill-card">
+            <div class="skill-header">
+              <span class="skill-symbol">&lt;/&gt;</span>
+              <h3>Programming &amp; Software</h3>
+            </div>
+            <ul class="skill-list">
+              <li>Java (Object-Oriented Programming, Data Structures)</li>
+              <li>C / C++ (Embedded Firmware Fundamentals)</li>
+              <li>Python (Scripting, Raspberry Pi automation)</li>
+              <li>HTML5, CSS3, JavaScript (Frontend Web)</li>
+              <li>SQL &amp; Database Basics</li>
+            </ul>
+          </div>
+
+          <!-- Skill Card 4 -->
+          <div class="skill-card">
+            <div class="skill-header">
+              <span class="skill-symbol">🛠</span>
+              <h3>Tools &amp; Simulation</h3>
+            </div>
+            <ul class="skill-list">
+              <li>VS Code &amp; Arduino IDE</li>
+              <li>Git &amp; GitHub Version Control</li>
+              <li>Circuit Simulation (Logisim / Tinkercad / Proteus)</li>
+              <li>Technical Documentation &amp; Schematics</li>
+              <li>Linux / Bash Command Line</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION & EDUCATION TIMELINE -->
+    <section class="section container about-section" id="about">
+      <div class="about-mark">
+        <div class="profile-photo-container">
+          <img src="profile.jpg" alt="Argie Etac - Computer Engineering Student" class="profile-photo-img" />
+          <div class="profile-photo-badge">
+            <span class="badge-dot"></span>
+            <span>ARGIE ETAC · CPE</span>
+          </div>
+          <div class="profile-tech-corner tl"></div>
+          <div class="profile-tech-corner tr"></div>
+          <div class="profile-tech-corner bl"></div>
+          <div class="profile-tech-corner br"></div>
+        </div>
+        <div class="about-orbit orbit-1"></div>
+        <div class="about-orbit orbit-2"></div>
+      </div>
+
+      <div class="about-copy">
+        <p class="section-kicker">BACKGROUND &amp; ASPIRATION</p>
+        <h2 class="section-title">Driven by Curiosity.<br />Engineer in the Making<span class="accent-dot">.</span></h2>
+        
+        <p class="muted">
+          I am <strong>Argie Etac</strong>, a passionate Computer Engineering student at <strong>ICCT Colleges Foundation Inc.</strong> 
+          (College of Engineering and Digital Technology) based in San Jose del Monte, Bulacan, Philippines.
+        </p>
+
+        <p class="muted">
+          My journey bridges physical computing hardware with scalable software systems. Beyond designing digital logic 
+          circuits and microcontroller firmware, I served as the <strong>Lead Backend Developer</strong> for <strong>Project Nexus (Community Aid Network)</strong>, 
+          architecting centralized databases, emergency request APIs, and coordination tools for local communities.
+        </p>
+
+        <!-- Coursework Highlights -->
+        <div class="coursework-box">
+          <h4>Key Engineering Focus Areas:</h4>
+          <div class="course-tags">
+            <span>Embedded Systems Design</span>
+            <span>Backend &amp; Web Development</span>
+            <span>Digital Logic Systems</span>
+            <span>Object-Oriented Programming</span>
+            <span>Data Structures &amp; Algorithms</span>
+            <span>Computer Architecture</span>
+            <span>Circuit Analysis</span>
+          </div>
+        </div>
+
+        <div class="about-actions">
+          <a class="button primary" href="#contact">Get in Touch</a>
+          <a class="button secondary" href="#projects">Review Builds</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION WITH INTERACTIVE FORM -->
+    <section class="contact-section" id="contact">
+      <div class="container contact-inner">
+        <p class="section-kicker">INITIATE CONNECTION</p>
+        <h2 class="section-title">Let's build something impactful together<span class="accent-dot">.</span></h2>
+        <p class="muted max-text">
+          Have an internship opportunity, project collaboration, or engineering inquiry? 
+          Send me a message below or reach out directly.
+        </p>
+
+        <div class="contact-layout">
+          <!-- Contact Channels -->
+          <div class="contact-info-panel">
+            <div class="contact-card">
+              <div class="c-icon">📍</div>
+              <div>
+                <strong>Location</strong>
+                <p>San Jose del Monte, Bulacan, Philippines</p>
+              </div>
+            </div>
+
+            <div class="contact-card">
+              <div class="c-icon">✉️</div>
+              <div>
+                <strong>Email Address</strong>
+                <p><a href="mailto:cateargie@gmail.com" class="contact-link">cateargie@gmail.com</a></p>
+                <button class="copy-email-btn" id="copyEmailBtn">Copy Email Address</button>
+              </div>
+            </div>
+
+            <div class="contact-card">
+              <div class="c-icon">📱</div>
+              <div>
+                <strong>Mobile Number</strong>
+                <p><a href="tel:09398443278" class="contact-link">09398443278</a></p>
+                <button class="copy-email-btn" id="copyPhoneBtn">Copy Mobile Number</button>
+              </div>
+            </div>
+
+            <div class="contact-card">
+              <div class="c-icon">💻</div>
+              <div>
+                <strong>GitHub</strong>
+                <p>github.com/ArgieEtac</p>
+                <a href="https://github.com/ArgieEtac" target="_blank" rel="noreferrer" class="link-styled">Visit Profile ↗</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Direct Interactive Form -->
+          <div class="contact-form-panel">
+            <form id="portfolioContactForm" class="styled-form">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="senderName">Your Name *</label>
+                  <input type="text" id="senderName" required placeholder="Juan Dela Cruz" />
+                </div>
+                <div class="form-group">
+                  <label for="senderEmail">Your Email *</label>
+                  <input type="email" id="senderEmail" required placeholder="juan@example.com" />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="inquiryType">Topic / Reason for Contact</label>
+                <select id="inquiryType" class="styled-select">
+                  <option value="Internship / Job Opportunity">Internship / Job Opportunity</option>
+                  <option value="Hardware / Embedded Collaboration">Hardware / Embedded Collaboration</option>
+                  <option value="Software Project Collaboration">Software Project Collaboration</option>
+                  <option value="General Question / Mentorship">General Question / Say Hello</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="messageText">Message *</label>
+                <textarea id="messageText" rows="4" required placeholder="Hi Argie, I saw your portfolio and would like to discuss..."></textarea>
+              </div>
+
+              <button type="submit" class="button primary submit-btn" id="btnSubmitMessage">
+                <span>Send Dispatch</span>
+                <span class="send-icon">🚀</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a class="brand" href="#home">
+          <span class="brand-mark sm">AE</span>
+          <span class="brand-text">
+            ARGIE ETAC
+            <span class="brand-sub">COMPUTER ENGINEERING</span>
+          </span>
+        </a>
+        <p class="footer-tagline">Engineered with modern HTML5, CSS3, &amp; Vanilla JavaScript.</p>
+      </div>
+
+      <div class="footer-center">
+        <p>© <span id="year"></span> Argie Etac. All rights reserved.</p>
+        <span class="footer-uptime">SYSTEM STATUS: <span class="accent-green">NORMAL 100%</span></span>
+      </div>
+
+      <a href="#home" class="back-top" title="Back to top">
+        <span>Back to top</span>
+        <span class="top-arrow">↑</span>
+      </a>
+    </div>
+  </footer>
+
+  <!-- PROJECT DETAILS MODAL DIALOG -->
+  <dialog id="projectDialog" class="project-dialog">
+    <div class="dialog-box">
+      <button class="dialog-close" id="dialogClose" aria-label="Close details">×</button>
+      
+      <div class="dialog-header">
+        <span class="section-kicker" id="dialogKicker">PROJECT DETAILS</span>
+        <h2 id="dialogTitle">Project Title</h2>
+        <div class="dialog-badges" id="dialogBadges"></div>
+      </div>
+
+      <div class="dialog-content">
+        <div class="dialog-section">
+          <h3>Overview &amp; Architecture</h3>
+          <p id="dialogDescription"></p>
+        </div>
+
+        <div class="dialog-section">
+          <h3>Hardware / Software Stack</h3>
+          <div class="tech-tags" id="dialogTags"></div>
+        </div>
+
+        <div class="dialog-section">
+          <h3>Technical Implementation &amp; Deliverables</h3>
+          <ul id="dialogList" class="dialog-checklist"></ul>
+        </div>
+
+        <div class="dialog-callout">
+          <strong>Engineering Next Step:</strong>
+          <span id="dialogNextStep">Continuous testing, real-world breadboarding, and schematic documentation.</span>
+        </div>
+      </div>
+
+      <div class="dialog-footer">
+        <button class="button secondary" id="dialogCloseBtn">Close Window</button>
+        <a href="#contact" class="button primary" id="dialogInquireBtn">Inquire About This Project</a>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- QUICK CV MODAL DIALOG -->
+  <dialog id="cvDialog" class="project-dialog cv-dialog">
+    <div class="dialog-box">
+      <button class="dialog-close" id="cvDialogClose" aria-label="Close CV preview">×</button>
+      <div class="dialog-header">
+        <div class="cv-header-flex">
+          <img src="profile.jpg" alt="Argie Etac" class="cv-avatar-img" />
+          <div>
+            <span class="section-kicker">CURRICULUM VITAE BRIEF</span>
+            <h2>Argie Etac</h2>
+            <p class="muted">Computer Engineering Student · ICCT Colleges · Bulacan, PH</p>
+            <p class="cv-contact-strip">📱 09398443278 · ✉️ cateargie@gmail.com · 💻 github.com/ArgieEtac</p>
+          </div>
+        </div>
+      </div>
+      <div class="dialog-content cv-summary-body">
+        <div class="cv-block">
+          <h4>🎓 Education</h4>
+          <p><strong>Bachelor of Science in Computer Engineering</strong></p>
+          <p class="muted">ICCT Colleges Foundation Inc. (College of Engineering and Digital Technology) · Focusing on Embedded Systems, Microcontrollers, and Backend Web Architecture.</p>
+        </div>
+        <div class="cv-block">
+          <h4>⚡ Core Competencies</h4>
+          <p>Microcontrollers (Arduino, ESP32), Raspberry Pi, Digital Logic Prototyping, Backend Web Development, Java, C/C++, Python, HTML/CSS/JavaScript, Git &amp; GitHub.</p>
+        </div>
+        <div class="cv-block">
+          <h4>🚀 Featured Project Highlights</h4>
+          <p><strong>Community Aid Network (CAN)</strong> (Lead Backend Developer - Capstone Project Nexus disaster response platform), Smart Coin Changer Automated Machine, Combinational Digital Logic Systems, Embedded Sensor Nodes, OOP Java Suite.</p>
+        </div>
+      </div>
+      <div class="dialog-footer">
+        <button class="button secondary" id="cvDialogCloseBtn">Close</button>
+        <a href="mailto:cateargie@gmail.com?subject=Argie%20Etac%20Resume%20Request" class="button primary">Request Full PDF Resume ↗</a>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- TOAST NOTIFICATION CONTAINER -->
+  <div id="toastContainer" class="toast-container"></div>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
